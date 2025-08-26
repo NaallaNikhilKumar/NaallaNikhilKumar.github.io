@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 56px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+header {
+    background-image: linear-gradient(to right, #4a90e2, #63b3ed);
+    color: white;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    margin-left: -1px;
+    background-color: #e9ecef;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-item:before,
+.timeline-item:after {
+    content: "";
+    display: table;
+}
+
+.timeline-item:after {
+    clear: both;
+}
+
+.timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    float: right;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    float: left;
+}
+
+.timeline-content:before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: -15px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #e9ecef;
+}
+
+.timeline-item:nth-child(even) .timeline-content:before {
+    right: auto;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #e9ecef transparent transparent;
+}
+
+@media (max-width: 767px) {
+    .timeline:before {
+        left: 40px;
+    }
+    .timeline-content {
+        width: calc(100% - 90px);
+        float: right;
+    }
+    .timeline-item:nth-child(even) .timeline-content:before,
+    .timeline-item:nth-child(odd) .timeline-content:before {
+        left: -15px;
+        border-width: 10px 15px 10px 0;
+        border-color: transparent #e9ecef transparent transparent;
+    }
+}
+
+#contact .btn-primary {
+    transition: all 0.3s ease;
+}
+
+#contact .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.progress {
+    height: 25px;
+    font-size: 0.875rem;
+}
+
+.progress-bar {
+    background-color: #4a90e2;
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+}
