@@ -1,437 +1,845 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Naalla Nikhil Kumar - Software Developer/UI Developer Portfolio
-    </title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Nikhil Kumar | Senior UI Architect</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Naalla Nikhil Kumar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <div class="ui-canvas-bg">
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+    </div>
+
+    <div class="noise"></div>
+
+    <nav class="navbar">
+      <a href="#home" class="logo status-logo">
+        <div class="pulse-dot"></div>
+        Nikhil Kumar
+      </a>
+      <div class="nav-links">
+        <a href="#expertise">Expertise</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#work">Work</a>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Toggle Light/Dark Mode">
+            <span id="theme-icon">🌓</span>
+          </button>
+
+          <a href="mailto:nikhilkumarnaalla@gmail.com" class="nav-contact">
+            Let's Talk
+          </a>
         </div>
       </div>
     </nav>
 
-    <header class="bg-primary text-white text-center py-5">
-      <div class="container">
-        <h1 class="display-4">Naalla Nikhil Kumar</h1>
-        <p class="lead">Software Developer / UI Developer</p>
-      </div>
-    </header>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Based in USA • 9+ Years Experience</p>
+          <h1 class="hero-title">
+            Senior UI<br /><span class="text-outline">Developer</span>
+          </h1>
+          <p class="hero-desc">
+            Bridging the gap between immaculate design and robust engineering.
+            Specializing in scalable enterprise applications using React,
+            Angular, and TypeScript.
+          </p>
+        </div>
 
-    <main class="container my-5">
-      <section id="about" class="mb-5">
-        <h2 class="text-center mb-4">About Me</h2>
-        <div class="row align-items-center">
-          <div class="col-md-12">
-            <p class="lead">
-              I'm a seasoned software developer with over 6 years of experience
-              in web application development. <br />My expertise spans both
-              front-end and back-end technologies, with a focus on creating
-              responsive and user-friendly interfaces.
+        <div class="hero-image reveal">
+          <div class="image-wrapper">
+            <img
+              src="https://avatars.githubusercontent.com/u/188905858?v=4"
+              alt="Nikhil Kumar"
+              class="profile-pic"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="bento-section" id="expertise">
+        <div class="bento-grid" id="cards-wrapper">
+          <div class="bento-card span-2 reveal">
+            <div class="card-content">
+              <div class="card-header">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="card-icon"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+                <h3>Domain Architecture</h3>
+              </div>
+
+              <p>
+                Engineering resilient, component-driven UI ecosystems tailored
+                for high-compliance enterprise environments. Specializing in
+                advanced state management, micro-frontend integration, and
+                bridging complex business logic with seamless user experiences.
+              </p>
+
+              <div class="pill-tags">
+                <span class="tag">Insurance</span>
+                <span class="tag">Banking</span>
+                <span class="tag">Retail</span>
+                <span class="tag">Healthcare</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card reveal">
+            <div class="card-content">
+              <div class="card-header">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="card-icon"
+                >
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                <h3>Core Stack</h3>
+              </div>
+              <div class="pill-tags tech-tags">
+                <span class="tag">React.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">HTML5 & SCSS</span>
+                <span class="tag">Material UI</span>
+
+                <span class="tag">Node.js</span>
+                <span class="tag">Python</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">MySQL & MongoDB</span>
+
+                <span class="tag">AWS CI/CD</span>
+                <span class="tag">Git / GitHub</span>
+                <span class="tag">Figma</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card span-row-1 reveal highlight-card">
+            <div class="card-content">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="quote-icon"
+              >
+                <path
+                  d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"
+                ></path>
+                <path
+                  d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"
+                ></path>
+              </svg>
+              <h3 class="visually-hidden">Philosophy</h3>
+
+              <p class="large-text">
+                "Design dictates function; architecture dictates scale."
+              </p>
+              <p class="quote-author">— Guiding Principle</p>
+            </div>
+          </div>
+
+          <div class="bento-card reveal">
+            <div class="card-content">
+              <div class="metric-header">
+                <h2 class="metric">30%</h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#22c55e"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="trend-icon"
+                >
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                  <polyline points="16 7 22 7 22 13"></polyline>
+                </svg>
+              </div>
+              <p>
+                Faster UI development cycles achieved via custom Material UI
+                design systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="bento-card reveal">
+            <div class="card-content">
+              <div class="metric-header">
+                <h2 class="metric">99.9%</h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#3b82f6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="trend-icon"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+              </div>
+              <p>Uptime maintained across enterprise CI/CD AWS deployments.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section reveal" id="skills">
+        <h2 class="section-heading">Technical Proficiency</h2>
+
+        <div class="skills-grid-container">
+          <div class="skill-item">
+            <div class="skill-header">
+              <div class="skill-title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="skill-icon"
+                >
+                  <circle cx="12" cy="12" r="2"></circle>
+                  <ellipse
+                    cx="12"
+                    cy="12"
+                    rx="10"
+                    ry="4"
+                    transform="rotate(45 12 12)"
+                  ></ellipse>
+                  <ellipse
+                    cx="12"
+                    cy="12"
+                    rx="10"
+                    ry="4"
+                    transform="rotate(-45 12 12)"
+                  ></ellipse>
+                </svg>
+                <span>React.js & Redux</span>
+              </div>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--target-width: 95%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <div class="skill-title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="skill-icon"
+                >
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <span>HTML5 Semantic Web</span>
+              </div>
+              <span class="skill-percentage">98%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--target-width: 98%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <div class="skill-title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="skill-icon"
+                >
+                  <path d="M8 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3"></path>
+                  <path d="M16 21h3a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-3"></path>
+                </svg>
+                <span>JavaScript & TypeScript</span>
+              </div>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--target-width: 95%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <div class="skill-title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="skill-icon"
+                >
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Bootstrap & Layouts</span>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--target-width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <div class="skill-title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="skill-icon"
+                >
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+                <span>Python (Scripting & Automation)</span>
+              </div>
+              <span class="skill-percentage">65%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--target-width: 65%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <div class="skill-title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="skill-icon"
+                >
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+                <span>PHP (Server-Side)</span>
+              </div>
+              <span class="skill-percentage">60%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--target-width: 60%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <div class="skill-title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="skill-icon"
+                >
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+                <span>MySQL</span>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--target-width: 80%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <div class="skill-title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="skill-icon"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+                <span>Git & GitHub (Version Control)</span>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--target-width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <div class="skill-title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="skill-icon"
+                >
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                  ></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+                <span>Node.js & REST APIs</span>
+              </div>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--target-width: 75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <div class="skill-title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="skill-icon"
+                >
+                  <path
+                    d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"
+                  ></path>
+                </svg>
+                <span>AWS & CI/CD Pipelines</span>
+              </div>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--target-width: 70%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-showcase" id="projects">
+        <div class="showcase-container">
+          <div class="showcase-sidebar">
+            <h2 class="section-heading">Real-Time<br />Projects</h2>
+            <p class="sidebar-desc">
+              Enterprise solutions engineered for scale, strict security
+              compliance, and seamless user experiences across complex domains.
             </p>
-            <ul class="list-unstyled">
-              <li>
-                <i class="bi bi-check-circle-fill text-primary me-2"></i>Skilled
-                in HTML, CSS, JavaScript, PHP, and MySQL
-              </li>
-              <li>
-                <i class="bi bi-check-circle-fill text-primary me-2"></i
-                >Proficient in CSS frameworks like Bootstrap and JavaScript
-                libraries such as jQuery and React.js
-              </li>
-              <li>
-                <i class="bi bi-check-circle-fill text-primary me-2"></i
-                >Experienced in using Figma for designing and prototyping user
-                interfaces
-              </li>
-              <li>
-                <i class="bi bi-check-circle-fill text-primary me-2"></i>Strong
-                problem-solving skills and commitment to continuous learning
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
 
-      <section id="skills" class="mb-5">
-        <h2 class="text-center mb-4">Technical Skills</h2>
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <h4>Frontend</h4>
-            <div class="progress mb-3">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 95%"
-                aria-valuenow="95"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                HTML/CSS
-              </div>
-            </div>
-            <div class="progress mb-3">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 90%"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                JavaScript
-              </div>
-            </div>
-            <div class="progress mb-3">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 85%"
-                aria-valuenow="85"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                React.js
-              </div>
+            <div class="scroll-indicator">
+              <div class="scroll-line"></div>
+              <span>Scroll to explore</span>
             </div>
           </div>
-          <div class="col-md-6 mb-4">
-            <h4>Backend</h4>
-            <div class="progress mb-3">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 90%"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                PHP
+
+          <div class="showcase-feed">
+            <div class="neo-card reveal">
+              <div class="neo-card-top">
+                <span class="client-badge">Apollo Health Care</span>
+                <div class="neo-tech-stack">
+                  <span>React.js</span> • <span>Python</span> •
+                  <span>MySQL</span>
+                </div>
+              </div>
+
+              <h3 class="neo-title">Healthcare Application Development</h3>
+              <p class="neo-desc">
+                A comprehensive healthcare application facilitating efficient
+                patient record management, appointment scheduling, and claims
+                processing while adhering to strict industry compliance
+                standards.
+              </p>
+
+              <div class="neo-roles">
+                <ul class="work-bullets">
+                  <li>
+                    Spearheaded requirements gathering and technical design
+                    phases in collaboration with cross-functional stakeholders.
+                  </li>
+                  <li>
+                    Architected highly reusable React.js components and
+                    integrated secure Python RESTful APIs via JWT
+                    authentication.
+                  </li>
+                  <li>
+                    Engineered and optimized complex MySQL database schemas to
+                    ensure data integrity and query performance.
+                  </li>
+                  <li>
+                    Translated Figma prototypes into pixel-perfect, responsive
+                    UI, establishing a cohesive design system.
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="progress mb-3">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 85%"
-                aria-valuenow="85"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                MySQL
+
+            <div class="neo-card reveal">
+              <div class="neo-card-top">
+                <span class="client-badge">MutiByte Technologies</span>
+                <div class="neo-tech-stack">
+                  <span>React.js</span> • <span>JS/ES6+</span> •
+                  <span>MySQL</span>
+                </div>
+              </div>
+
+              <h3 class="neo-title">E-commerce Website Development</h3>
+              <p class="neo-desc">
+                A full-stack e-commerce platform enabling product browsing, cart
+                management, and seamless transaction processing with secure
+                enterprise authentication.
+              </p>
+
+              <div class="neo-roles">
+                <ul class="work-bullets">
+                  <li>
+                    Led the frontend architecture for the e-commerce platform
+                    using React.js, ensuring optimal responsiveness across all
+                    devices.
+                  </li>
+                  <li>
+                    Integrated secure payment gateways and robust authentication
+                    flows for user profiles and order histories.
+                  </li>
+                  <li>
+                    Collaborated on backend database schema design in MySQL to
+                    support scalable inventory and order management.
+                  </li>
+                  <li>
+                    Orchestrated unit and integration testing pipelines to
+                    guarantee feature reliability before production deployment.
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-md-6 mb-4">
-            <h4>Tools & Frameworks</h4>
-            <div class="progress mb-3">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 95%"
-                aria-valuenow="95"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                Bootstrap
+
+            <div class="neo-card reveal">
+              <div class="neo-card-top">
+                <span class="client-badge">ECIL - India</span>
+                <div class="neo-tech-stack">
+                  <span>React.js</span> • <span>Figma</span> •
+                  <span>MySQL</span>
+                </div>
               </div>
-            </div>
-            <div class="progress mb-3">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 90%"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                jQuery
-              </div>
-            </div>
-            <div class="progress mb-3">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 85%"
-                aria-valuenow="85"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                Figma
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <h4>Other Skills</h4>
-            <div class="progress mb-3">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 90%"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                Git
-              </div>
-            </div>
-            <div class="progress mb-3">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 85%"
-                aria-valuenow="85"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                Agile Methodologies
+
+              <h3 class="neo-title">Procurement Status Tracking System</h3>
+              <p class="neo-desc">
+                A real-time procurement tracking dashboard providing
+                stakeholders with live updates on purchase orders, payments, and
+                integrated decision-making reports.
+              </p>
+
+              <div class="neo-roles">
+                <ul class="work-bullets">
+                  <li>
+                    Partnered with enterprise stakeholders to architect the
+                    system and define complex data visualization requirements.
+                  </li>
+                  <li>
+                    Engineered data-heavy tables and tracking interfaces using
+                    React.js, optimizing rendering performance for mobile
+                    devices.
+                  </li>
+                  <li>
+                    Iterated rapidly on UX workflows using Figma, drastically
+                    reducing user friction in the procurement lifecycle.
+                  </li>
+                  <li>
+                    Managed the end-to-end deployment process and provided
+                    continuous post-deployment system optimization.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="mb-5">
-        <h2 class="text-center mb-4">Projects</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">E-commerce Website</h5>
-                <p class="card-text">
-                  Developed a full-stack e-commerce website for Electronics
-                  Corporation of India Limited (ECIL), incorporating secure user
-                  authentication and payment gateway integration.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Online Procurement Status</h5>
-                <p class="card-text">
-                  Designed and implemented an online procurement status
-                  application for ECIL, simplifying the tracking of purchase
-                  orders and payments.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Visitor Pass Management System</h5>
-                <p class="card-text">
-                  Developed a comprehensive visitor pass management system for
-                  ECIL, featuring QR code integration for enhanced security and
-                  access control.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section class="experience-section" id="work">
+        <h2 class="section-heading reveal">Enterprise Engagements</h2>
 
-      <section id="experience" class="mb-5">
-        <h2 class="text-center mb-4">Work Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h4>Software Developer/UI Developer</h4>
-              <h5>Trinitiii LLC, IL, USA</h5>
-              <p class="text-muted">June 2023 - Present</p>
-              <ul>
+        <div class="work-list">
+          <div class="work-item reveal">
+            <div class="work-meta">
+              <span class="work-year">2025 — Pres</span>
+              <h3>State Farm</h3>
+            </div>
+            <div class="work-details">
+              <h4>Sr. UI Developer</h4>
+              <ul class="work-bullets">
                 <li>
-                  Collaborate with stakeholders to understand and analyze
-                  software requirements for diverse projects.
+                  Architecting responsive UI components with React.js and
+                  TypeScript, enforcing strict WCAG 2.1 compliance across all
+                  client-facing portals.
                 </li>
                 <li>
-                  Design and develop user-friendly interfaces using HTML, CSS,
-                  JavaScript, and React.js.
+                  Orchestrating seamless AWS deployments via custom GitHub
+                  Actions CI/CD pipelines.
                 </li>
                 <li>
-                  Leverage Figma for designing and prototyping user interfaces.
+                  Spearheading the transition toward a micro-frontend
+                  architecture to reduce cross-team deployment dependencies.
                 </li>
                 <li>
-                  Utilize PHP and MySQL for efficient backend development.
+                  Implementing advanced state management using Redux Toolkit to
+                  securely handle complex insurance claim data flows.
                 </li>
               </ul>
             </div>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h4>Software Engineer</h4>
-              <h5>Multibyte Technologies Pvt Ltd, India</h5>
-              <p class="text-muted">July 2016 - November 2021</p>
-              <ul>
+
+          <div class="work-item reveal">
+            <div class="work-meta">
+              <span class="work-year">2023 — 2024</span>
+              <h3>Walmart</h3>
+            </div>
+            <div class="work-details">
+              <h4>UI Developer</h4>
+              <ul class="work-bullets">
                 <li>
-                  Developed and maintained websites and web applications for
-                  various clients, including Electronics Corporation of India
-                  Limited (ECIL).
+                  Engineered scalable UI modules for global retail platforms,
+                  vastly optimizing performance via intelligent code splitting
+                  and lazy loading.
                 </li>
                 <li>
-                  Designed and implemented new landing pages and layouts to
-                  enhance user experience and engagement.
+                  Integrated A/B testing frameworks and analytics tracking
+                  (Adobe Analytics) to drive data-informed UX improvements.
                 </li>
                 <li>
-                  Conducted comprehensive testing and debugging activities.
+                  Modernized legacy monolithic codebases by systematically
+                  refactoring them into reusable React hooks and modular
+                  functional components.
                 </li>
                 <li>
-                  Managed and optimized MySQL databases, ensuring data integrity
-                  and efficient data retrieval processes.
+                  Mentored junior developers in Agile ceremonies, elevating team
+                  code quality through rigorous peer-review standards.
                 </li>
               </ul>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section id="education" class="mb-5">
-        <h2 class="text-center mb-4">Education</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="card mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Master's in Computer Technology</h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  Eastern Illinois University, Charleston, Illinois, USA
-                </h6>
-                <p class="card-text">Completed: May 2023</p>
-              </div>
+          <div class="work-item reveal">
+            <div class="work-meta">
+              <span class="work-year">2019 — 2022</span>
+              <h3>Axis Bank</h3>
             </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">
-                  B. Tech in Computer Science Engineering
-                </h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  JNTU, Hyderabad, India
-                </h6>
-                <p class="card-text">Completed: May 2016</p>
-              </div>
+            <div class="work-details">
+              <h4>UI Developer</h4>
+              <ul class="work-bullets">
+                <li>
+                  Developed enterprise banking dashboards with a modular UI
+                  architecture that scaled to support 50% more concurrent users
+                  with zero performance degradation.
+                </li>
+                <li>
+                  Hardened frontend security by implementing strict Content
+                  Security Policy (CSP) headers and mitigating XSS/CSRF
+                  vulnerabilities in transaction flows.
+                </li>
+                <li>
+                  Engineered real-time data visualization features using
+                  WebSockets and Chart.js to display live financial market
+                  fluctuations.
+                </li>
+                <li>
+                  Optimized heavy API polling by introducing efficient caching
+                  layers, significantly reducing server load.
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section id="contact" class="mb-5">
-        <h2 class="text-center mb-4">Get in Touch</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <form id="contact-form">
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <textarea
-                  class="form-control"
-                  id="message"
-                  rows="5"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary">
-                  Send Message
-                </button>
-              </div>
-            </form>
+          <div class="work-item reveal">
+            <div class="work-meta">
+              <span class="work-year">2016 — 2018</span>
+              <h3>Apollo Health Care</h3>
+            </div>
+            <div class="work-details">
+              <h4>UI Developer</h4>
+              <ul class="work-bullets">
+                <li>
+                  Built dynamic clinical applications using Angular, bridging
+                  frontend interfaces with complex Java-based backend services
+                  via RESTful APIs.
+                </li>
+                <li>
+                  Ensured strict HIPAA compliance in the frontend by
+                  establishing secure data rendering constraints and automatic
+                  session timeouts for patient records.
+                </li>
+                <li>
+                  Established automated End-to-End (E2E) testing pipelines using
+                  Protractor/Cypress, reducing manual QA cycles before major
+                  releases.
+                </li>
+                <li>
+                  Designed and maintained a centralized internal UI component
+                  library, reducing feature delivery time for adjacent
+                  engineering teams.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="bg-light py-4">
-      <div class="container text-center">
-        <div class="mb-3">
-          <a href="callto:+13098319153" class="text-dark me-3"
-            ><i class="bi bi-telephone"></i
-          ></a>
-          <a href="mailto:nikhilkumarnaalla@gmail.com" class="text-dark me-3"
-            ><i class="bi bi-envelope"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/nnikhilkumar/"
-            class="text-dark me-3"
-            ><i class="bi bi-linkedin"></i
-          ></a>
+    <footer class="minimal-footer reveal">
+      <div class="footer-content">
+        <h2>Ready to scale your UI.?</h2>
+
+        <a href="mailto:nikhilkumarnaalla@gmail.com" class="catchy-email-btn">
+          <span class="icon-wrapper">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="footer-icon"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </span>
+          <span class="email-text">Let's Collaborate</span>
+        </a>
+
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/nnikhilkumar/" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="footer-icon"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            LinkedIn ↗
+          </a>
+
+          <a href="https://github.com/NaallaNikhilKumar" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="footer-icon"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path>
+            </svg>
+            GitHub ↗
+          </a>
         </div>
-        <p>
-          &copy;
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-          Naalla Nikhil Kumar. All rights reserved.
-        </p>
+        <div class="footer-copyright">
+          <p>
+            &copy; <span id="current-year"></span> Nikhil Kumar. All rights
+            reserved.
+          </p>
+        </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
