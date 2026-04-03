@@ -1,7 +1,7 @@
 # 💫 About Me:
 Expert in React.js, Angular, and TypeScript with a deep focus on UI architecture, state management, and performance optimization. Proven track record of leading successful enterprise projects, including high-traffic retail platforms and secure banking dashboards.
 
-## [![Portfolio]](https://naallanikhilkumar.github.io/)
+## [![Portfolio](https://img.shields.io/badge/portfolio-blue)](https://naallanikhilkumar.github.io/)
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/nnikhilkumar) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:nikhilkumarnaalla@gmail.com) 
